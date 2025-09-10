@@ -1,13 +1,27 @@
 .top-bar {
   background-color: #1D71B8;
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   padding: 8px 0;
 }
 
 .top-bar .contact-info {
   display: flex;
   align-items: center;
+}
+
+.top-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+/* Hover (al pasar el mouse) */
+.top-link:hover {
+  color: #ffc107; /* Puedes usar otro color como azul (#007bff) o verde (#28a745) */
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .top-bar .social-icons a {
@@ -26,12 +40,12 @@
 }
 
 .nav-link {
-  color: white !important;
+  color: white; 
   font-weight: bold;
 }
 
 .nav-link:hover {
-  color: white !important;
+  color: white;
 }
 
 .contact-btn {
@@ -66,4 +80,26 @@
 
 .navbar .dropdown-menu {
   margin-top: 0;
+  background-color: #57a4e2;
+  
+}
+
+
+
+.navbar  {
+  background-color: #57a4e2;
+  font-size: 20px;
+}
+
+
+
+.dropdown-menu .dropdown-item {
+  color: white; 
+  background-color: #57a4e2;;
+  font-size: 20px; 
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #3f93d8; 
+  color: #ffffff; 
 }
