@@ -1,6 +1,6 @@
 .top-bar {
-  background-color: #6fdc19;
-  color: black;
+  background-color: #1D71B8;
+  color: white;
   font-size: 14px;
   padding: 8px 0;
 }
@@ -18,11 +18,11 @@
 }
 
 .top-bar .social-icons a:hover {
-  color: #0fa30f;
+  color: #38DAFE;
 }
 
 .navbar-custom {
-  background-color: black;
+  background-color: #38DAFE;
 }
 
 .nav-link {
@@ -31,11 +31,11 @@
 }
 
 .nav-link:hover {
-  color: #00ff00 !important;
+  color: white !important;
 }
 
 .contact-btn {
-  background-color: rgb(10, 238, 10);
+  background-color: #38DAFE;
   color: black;
   font-weight: bold;
   border-radius: 20px;
@@ -44,7 +44,7 @@
 }
 
 .contact-btn:hover {
-  background-color: #0fa30f;
+  background-color: #38DAFE;
   color: white;
 }
 
