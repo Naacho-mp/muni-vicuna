@@ -1,5 +1,20 @@
+.btn-contacto{
+  display: inline-block;
+  background-color: #1D71B8;
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-contacto:hover{
+  background-color: #0A263E;
+}
+
 .footer-links{
-  width: 25%;
+  width: 20%;
   padding: 0 15px;
 }
 
@@ -13,7 +28,14 @@
   display: inline-block;
 }
 
-.footer-links ul li a{
+.footer-links p{
+  font-size: 18px;
+  color: #1D71B8;
+  font-weight: bold;
+  padding: 0;
+}
+
+.footer-links ul li a {
   color: #1D71B8;
   font-weight: bold;
   text-decoration: none;
