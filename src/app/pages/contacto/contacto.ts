@@ -6,6 +6,7 @@ import { Footer } from '../../components/footer/footer';
 
 @Component({
   selector: 'app-contacto',
+  standalone: true,
   imports: [ Header, Contentcontacto, Footer],
   templateUrl: './contacto.html',
   styleUrl: './contacto.css'
