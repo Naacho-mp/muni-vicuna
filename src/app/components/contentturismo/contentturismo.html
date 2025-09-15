@@ -1,0 +1,20 @@
+<div class="tours-section">
+  <h2 class="title">Nuestros Tours</h2>
+  <div class="cards-container">
+    <div class="card" *ngFor="let tour of tours">
+      <img [src]="tour.img" [alt]="tour.title" />
+      <div class="card-content">
+        <h3>{{ tour.title }}</h3>
+        <p>
+          {{ tour.showFullText ? tour.description : tour.description.substring(0, 150) + '...' }}
+        </p>
+        <div class="buttons">
+          <button (click)="toggleText(tour)">
+            {{ tour.showFullText ? 'Ver menos' : 'Ver más' }}
+          </button>
+          <button>Reservar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

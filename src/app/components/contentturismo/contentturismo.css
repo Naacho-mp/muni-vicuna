@@ -1,0 +1,113 @@
+/* Sección de Tours */
+.tours-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+/* Título */
+.title {
+  font-size: 2.5rem;
+  color: #131e75;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #00aaff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Contenedor de tarjetas */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start; /* ⚡ importante para que cards largas no se corten */
+}
+
+/* Tarjeta individual */
+.card {
+  width: 300px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  text-align: center;
+
+  flex: 0 1 auto;       /* ⚡ permite crecer con el contenido */
+  overflow: visible;    /* ⚡ muestra todo el contenido */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen de la tarjeta */
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: block;
+}
+
+/* Contenido dentro de la tarjeta */
+.card-content {
+  padding: 15px;
+  overflow: visible;   /* ⚡ permite mostrar todo el texto */
+}
+
+/* Título dentro de la tarjeta */
+.card-content h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #131e75;
+}
+
+/* Descripción de la tarjeta */
+.card-content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: normal;    /* ⚡ permite que el texto haga varias líneas */
+  word-wrap: break-word;  /* ⚡ evita que palabras largas se salgan */
+  text-align: left;
+}
+
+/* Contenedor de botones */
+.card-content .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Botones */
+.card-content button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #1D71B8;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-content button:hover {
+  background-color: #155a8a;
+}
+
+/* Responsividad: tarjetas en móvil */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
