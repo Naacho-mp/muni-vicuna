@@ -1,84 +1,292 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-}
-
-.carrusel-contenedor {
-  width: 80vw;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.carrusel {
-  display: flex;
-  width: 100%; 
-  transition: transform 0.5s ease-in-out;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.slide {
-  width: 90%;
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-  position: relative;
-}
-
-.slide img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.carrusel-navegacion {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  display: flex;
-  gap: 10px;
-  z-index: 2;
-}
-
-.carrusel-navegacion a {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: #aaa;
-  border-radius: 50%;
-  margin: 0 5px;
-  text-indent: -9999px;
-  overflow: hidden;
-  transition: background 0.3s;
-}  
-
-.carrusel-navegacion a:hover {
-  background: #333;
-}
-
+/*Boton ver-mas*/
 .ver-mas-boton {
   position: absolute;
-  top: 85%;
-  left: 85%;
+  top: 55%;
+  left: 25%;
   transform: translate(-50%, -50%);
-  background-color: rgba(20, 55, 153, 0.6); 
-  color: white; 
-  padding: 12px 24px; 
-  border-radius: 5px; 
-  text-decoration: none; 
+  background-color: rgba(30, 138, 189, 0.6);
+  border: 2px solid #ffffff;
+  color: white;
+  padding: 12px 24px;
+  width: 150px;
+  border-radius: 65px;
+  text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease; 
-  z-index: 10; 
+  z-index: 10;
+  text-align: center;
 }
 
 .ver-mas-boton:hover {
-  background-color: rgba(77, 136, 202, 0.8); 
-  transform: translate(-50%, -50%) scale(1.05); 
+  background-color: rgba(77, 136, 202, 0.8);
+  transform: translate(-50%, -50%) scale(1.05);
 }
+
+/*Textos en Slides del carrusel*/
+.carousel-caption {
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+/*Titulo del Slide*/
+.titulo-slide {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/*Subtitulo del Slide*/
+.subti-slide{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.carrusel-principal .carousel-indicators {
+  top: 85%;
+}
+
+
+
+/*Tamaño del Carrusel*/
+
+.carrusel-principal .carousel img {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin: 0 auto;
+}
+
+/*Posicion del carrusel*/
+.carrusel-principal .carousel-item {
+  position: relative;
+}
+
+/*Cartas bajo carrusel-dar forma horizontal*/
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -30px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/*Configs cartas individuales*/
+.card {
+  width: 260px;
+  height: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px ;
+}
+
+/*Carta turismo*/
+.card-content .card-turismo {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Carta cultura*/
+.card-content .card-cultura{
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Carta social*/
+.card-content .card-social{
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Carta deporte*/
+.card-content .card-deporte{
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+/*Configs ims de las cartas*/
+.card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/*Efecto al pasar el mouse*/
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/*Contenido de las cartas*/
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+/*Titulos h3 de cartas*/
+.card-content h3 {
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+}
+
+/*Boton cartas*/
+.card-content .btn {
+  background-color: rgba(77, 136, 202, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+/*Efecto del boton*/
+.card-content .btn:hover {
+  background-color: #0056b3;
+}
+
+/*Cards Noticias*/
+
+.titulo-noticia h1 {
+  font-family: sans-serif;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  color: rgba(30, 138, 189, 0.6);
+  text-shadow: 1px 1px 0 black;
+}
+
+.card-noticia{
+  color: black;
+  display: flex;
+  width: 300px;
+  height: 400px;
+
+}
+
+.btn-noticia{
+  position: relative;
+  background-color: rgba(30, 138, 189, 0.6);
+  border: 2px solid #ffffff;
+  top: 10px;
+
+}
+
+.link-todas-las-noticias{
+  text-decoration: none;
+  color: rgba(30, 138, 189, 0.6);
+  text-shadow: 1px 1px 0 black;
+}
+
+/*Carrusel del Banner*/
+.carrusel-boletin.carousel.slide {
+  width: 70%;
+  height: 38vh;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  overflow: hidden;
+  top: 40px;
+}
+
+/* configs imágenes */
+.carrusel-boletin.carousel.slide .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* configs video y texto vicuna */
+.franja {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.fondo-desenfocado {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/fondo3.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  z-index: 0;
+}
+
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  gap: 20px;
+  width: 70%;
+}
+
+.video-container {
+  flex: 1 1 400px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 375px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.descripcion {
+  flex: 1 1 300px;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+
+}
+
+.descripcion h2 {
+  text-align: center;
+}
+
+.descripcion p {
+  margin-left: 100px;
+  font-size: 18px;
+}
+
+.destaca-gabriela {
+  font-weight: bold;
+  color: #ffd700;
+}
+
