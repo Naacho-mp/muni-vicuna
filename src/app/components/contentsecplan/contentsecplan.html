@@ -1,0 +1,41 @@
+<div class="container">
+  <h2>SECRETARÍA COMUNAL DE PLANIFICACIÓN</h2>
+
+  <div class="card">
+    <img [src]="secretario.imagen" alt="Secretario" class="profile-img" />
+    <div class="info">
+      <h3>Secretario Comunal de Planificación: {{ secretario.nombre }}</h3>
+      <p><strong>Primer subrogante:</strong> {{ secretario.primerSubrogante }}</p>
+      <p><strong>Segundo subrogante:</strong> {{ secretario.segundoSubrogante }}</p>
+      <p>Según <a href="#">{{ secretario.decreto }}</a> de fecha de {{ secretario.fecha }}</p>
+    </div>
+  </div>
+
+  <div class="contacto">
+    <p><strong>Dirección:</strong> {{ contacto.direccion }}</p>
+    <p><strong>Teléfono:</strong> {{ contacto.telefono }}</p>
+    <p><strong>Email:</strong> <a href="mailto:{{ contacto.email }}">{{ contacto.email }}</a></p>
+  </div>
+
+  <!-- DESCRIPCIÓN GENERAL -->
+  <h3>DESCRIPCIÓN GENERAL</h3>
+  <p>{{ descripcion }}</p>
+
+  <!-- OBJETIVOS -->
+  <h3>OBJETIVOS</h3>
+  <ul>
+    <li *ngFor="let objetivo of objetivos">{{ objetivo }}</li>
+  </ul>
+
+  <!-- FUNCIONES -->
+  <h3>FUNCIONES</h3>
+  <ul>
+    <li *ngFor="let funcion of funciones">{{ funcion }}</li>
+  </ul>
+
+  <!-- Carrusel de imágenes -->
+  <div class="imagenes" #carousel>
+    <img *ngFor="let img of imagenes" [src]="img" alt="Planificación" />
+  </div>
+
+</div>
