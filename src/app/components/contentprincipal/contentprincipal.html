@@ -12,60 +12,63 @@
 
   <!--Carrusel con codigo oficial de pagina bootstrap-->
 
-  <div id="carrusel" class="carousel slide w-100 ms-auto" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div id="carrusel" class="carousel slide w-100 ms-auto" data-bs-ride="carousel" aria-label="Carrusel de eventos destacados">
+
+    <!-- Indicadores del carrusel -->
+    <div class="carousel-indicators" aria-label="Controles de navegación del carrusel">
+      <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Ir al slide 1"></button>
+      <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Ir al slide 2"></button>
+      <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Ir al slide 3"></button>
     </div>
 
-    <div class="carousel-inner">
+    <!-- Contenido del carrusel -->
+    <div class="carousel-inner" aria-live="polite">
 
-      <div class="carousel-item active">
-        <img src="assets/carrusel-img1.webp" class="d-block w-100" alt="Slide 1">
-        <a href="#" class="ver-mas-boton">Ver más...</a>
+      <div class="carousel-item active" aria-label="Slide 1: Semana de la Chilenidad">
+        <img src="assets/carrusel-img1.webp" class="d-block w-100" alt="Imagen del evento Semana de la Chilenidad en Vicuña">
+        <a href="#" class="ver-mas-boton" aria-label="Leer más sobre Semana de la Chilenidad">Ver más...</a>
 
-        <!--Texto en Slides del carrusel-->
         <div class="carousel-caption d-none d-md-block">
-          <span class="titulo-slide"><strong>Vicuña Celebra: Semana de la <br> Chilenidad</strong> </span>
-          <span class="subti-slide"><p>Disfruta de música, gastronomía y tradiciones en el corazón del <br> Valle de Elqui</p></span>
+          <span class="titulo-slide"><strong>Vicuña Celebra: Semana de la <br> Chilenidad</strong></span>
+          <span class="subti-slide">
+          <p>Disfruta de música, gastronomía y tradiciones en el corazón del <br> Valle de Elqui</p>
+        </span>
         </div>
-
       </div>
 
-      <div class="carousel-item">
-        <img src="assets/carrusel-img2.webp" class="d-block w-100" alt="Slide 2">
-        <a href="#" class="ver-mas-boton">Ver más...</a>
+      <div class="carousel-item" aria-label="Slide 2: Entrada Liberada">
+        <img src="assets/carrusel-img2.webp" class="d-block w-100" alt="Imagen promocional de evento con entrada liberada">
+        <a href="#" class="ver-mas-boton" aria-label="Leer más sobre evento con entrada liberada">Ver más...</a>
 
-        <!--Texto en Slides del carrusel-->
         <div class="carousel-caption d-none d-md-block">
-          <span class="titulo-slide"><strong>Entrada Liberada</strong> </span>
-          <span class="subti-slide"><p>Grandes artistas confirmados, ven por tu entrada</p></span>
+          <span class="titulo-slide"><strong>Entrada Liberada</strong></span>
+          <span class="subti-slide">
+          <p>Grandes artistas confirmados, ven por tu entrada</p>
+        </span>
         </div>
-
       </div>
 
-      <div class="carousel-item">
-        <img src="assets/carrusel-img3.webp" class="d-block w-100" alt="Slide 3">
-        <a href="#" class="ver-mas-boton">Ver más...</a>
+      <div class="carousel-item" aria-label="Slide 3: Panoramas dieciocheros">
+        <img src="assets/carrusel-img3.webp" class="d-block w-100" alt="Imagen de panoramas familiares para fiestas patrias">
+        <a href="#" class="ver-mas-boton" aria-label="Leer más sobre panoramas dieciocheros">Ver más...</a>
 
-        <!--Texto en Slides del carrusel-->
         <div class="carousel-caption d-none d-md-block">
-          <span class="titulo-slide"><strong>Panoramas dieciocheros para <br> toda la Familia</strong> </span>
-          <span class="subti-slide"><p>Actividades, música, y sabores típicos para disfrutar <br> el 18 en comunidad</p></span>
+          <span class="titulo-slide"><strong>Panoramas dieciocheros para <br> toda la Familia</strong></span>
+          <span class="subti-slide">
+          <p>Actividades, música, y sabores típicos para disfrutar <br> el 18 en comunidad</p>
+        </span>
         </div>
-
       </div>
     </div>
 
-    <!--Boton anterior-->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+    <!-- Botón anterior -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev" aria-label="Slide anterior">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Anterior</span>
     </button>
 
-    <!--Boton siguiente-->
-    <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+    <!-- Botón siguiente -->
+    <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next" aria-label="Siguiente slide">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Siguiente</span>
     </button>
@@ -74,86 +77,98 @@
 
 <!--Cartas-->
 
-<section class="cards-container">
+<section class="cards-container" aria-label="Sección de tarjetas informativas">
 
-  <div class="card card-1">
-    <img src="assets/turismo.jpg" class="card-img">
-
+  <!-- Tarjeta: Turismo -->
+  <div class="card carta-principal" aria-label="Tarjeta de Turismo">
+    <img src="assets/turismo.jpg" class="card-img" alt="Imagen representativa de turismo en Vicuña">
     <div class="card-content">
       <h3 class="card-turismo">Turismo</h3>
-      <a href="#" class="btn">CONOCE MÁS</a>
+      <a href="#" class="btn tamano-letra-btn" aria-label="Conoce más sobre turismo en Vicuña">CONOCE MÁS</a>
     </div>
   </div>
 
-  <div class="card card-2">
-    <img src="assets/cultura.jpg" class="card-img">
+  <!-- Tarjeta: Cultura -->
+  <div class="card carta-principal" aria-label="Tarjeta de Cultura">
+    <img src="assets/cultura.jpg" class="card-img" alt="Imagen representativa de actividades culturales">
     <div class="card-content">
       <h3 class="card-cultura">Cultura</h3>
-      <a href="#" class="btn">CONOCE LA CULTURA</a>
+      <a href="#" class="btn tamano-letra-btn" aria-label="Conoce la cultura local">CONOCE LA CULTURA</a>
     </div>
   </div>
 
-  <div class="card card-3">
-    <img src="assets/social.jpeg" class="card-img">
+  <!-- Tarjeta: Organizaciones Sociales -->
+  <div class="card carta-principal" aria-label="Tarjeta de Organizaciones Sociales">
+    <img src="assets/social.jpeg" class="card-img" alt="Imagen de participación social comunitaria">
     <div class="card-content">
-      <h3 class="card-social">Elecciones de las Organizaciones Sociales</h3>
-      <a href="#" class="btn">INFÓRMATE AQUÍ</a>
+      <h3 class="card-social">Organizaciones Sociales</h3>
+      <a href="#" class="btn tamano-letra-btn" aria-label="Infórmate sobre las organizaciones sociales">INFÓRMATE AQUÍ</a>
     </div>
   </div>
 
-  <div class="card card-4">
-    <img src="assets/deporte.jpg" class="card-img">
+  <!-- Tarjeta: Talleres Deportivos -->
+  <div class="card carta-principal" aria-label="Tarjeta de Talleres Deportivos">
+    <img src="assets/deporte.jpg" class="card-img" alt="Imagen de actividades deportivas">
     <div class="card-content">
-      <h3 class="card-deporte">Talleres Deportivos y Recreativos</h3>
-      <a href="#" class="btn">¡PARTICIPA!</a>
+      <h3 class="card-deporte">Talleres Deportivos</h3>
+      <a href="#" class="btn tamano-letra-btn" aria-label="Participa en talleres deportivos">¡PARTICIPA!</a>
     </div>
   </div>
 
 </section>
 
-
 <!--Carrusel Banner-->
 
-<div id="carrusel-banner" class="carousel slide carrusel-boletin" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/banner1.jpg" class="d-block " alt="...">
+<div id="carrusel-banner" class="carousel slide carrusel-boletin" data-bs-ride="carousel" aria-label="Carrusel de banners informativos para la comuna">
+
+  <div class="carousel-inner" aria-live="polite">
+
+    <div class="carousel-item active" aria-label="Banner 1: Información destacada">
+      <img src="assets/banner1.jpg" class="d-block" alt="Banner informativo 1">
     </div>
-    <div class="carousel-item">
-      <img src="assets/banner2.jpg" class="d-block " alt="...">
+
+    <div class="carousel-item" aria-label="Banner 2: Información destacada">
+      <img src="assets/banner2.jpg" class="d-block" alt="Banner informativo 2">
     </div>
-    <div class="carousel-item">
-      <img src="assets/banner3.png" class="d-block " alt="...">
+
+    <div class="carousel-item" aria-label="Banner 3: Información destacada">
+      <img src="assets/banner3.png" class="d-block" alt="Banner informativo 3">
     </div>
+
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-banner" data-bs-slide="prev">
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-banner" data-bs-slide="prev" aria-label="Banner anterior">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <span class="visually-hidden">Anterior</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carrusel-banner" data-bs-slide="next">
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carrusel-banner" data-bs-slide="next" aria-label="Siguiente banner">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span class="visually-hidden">Siguiente</span>
   </button>
+
 </div>
 
 
 <!--Video Youtube -->
 
-<section class="franja">
-  <div class="fondo-desenfocado"></div>
+<section class="franja" aria-label="Sección informativa bondades sobre la comuna de Vicuña">
+  <div class="fondo-desenfocado" aria-hidden="true"></div>
 
   <div class="contenido">
-    <div class="video-container">
+
+    <!-- Contenedor del video -->
+    <div class="video-container" aria-label="Video sobre la comuna de Vicuña">
       <iframe
-        width="560" height="315"
         src="https://www.youtube.com/embed/E_qVNRICqH8?si=IHHf0dvFWbj2Z8PN"
-        title="YouTube video player"
+        title="Video sobre la comuna de Vicuña"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
       </iframe>
     </div>
 
-    <div class="descripcion">
+    <!-- Descripción de la comuna -->
+    <div class="descripcion" aria-label="Descripción turística y cultural de la comuna de Vicuña">
       <h2>Comuna de Vicuña</h2>
       <p>
         La comuna de Vicuña, ubicada en el corazón del Valle de Elqui en la Región de Coquimbo, es conocida por sus cielos despejados, su rica herencia cultural y sus paisajes cordilleranos.
@@ -162,15 +177,16 @@
         Sus atractivos turísticos incluyen observatorios astronómicos, viñedos de pisco, ríos cristalinos y pueblos encantadores que invitan al descanso y la contemplación. Además, su clima soleado y seco durante gran parte del año la convierte en un destino ideal para el turismo astronómico, cultural y ecológico.
       </p>
     </div>
+
   </div>
 </section>
 
 
 <!--Noticias-->
 
-<div class="container py-4">
+<div class="container py-4" aria-label="Sección de noticias destacadas">
 
-  <!--Titulo Noticias-->
+  <!-- Título Noticias -->
   <div class="titulo-noticia text-start">
     <h1><strong>Vicuña al día</strong></h1>
   </div>
@@ -179,57 +195,58 @@
 
     <!-- Noticia 1 -->
     <div class="col">
-      <div class="card card-noticia h-100">
-        <img src="assets/noti1.jpg" class="card-img-top" alt="Noticia 1">
+      <article class="card card-noticia h-100" aria-label="Noticia: Instrucción teórica y práctica">
+        <img src="assets/noti1.jpg" class="card-img-top" alt="Personas recibiendo instrucción en atención primaria">
         <div class="card-body">
           <h5 class="card-title">Instrucción teórica y práctica</h5>
           <p class="card-text">Los dirigentes recibieron instrucción teórica y práctica en materias de atención primaria.</p>
-          <a href="#" class="btn btn-noticia">Ver más</a>
+          <a href="#" class="btn btn-noticia" aria-label="Leer más sobre Instrucción teórica y práctica">Ver más</a>
         </div>
-      </div>
+      </article>
     </div>
 
     <!-- Noticia 2 -->
     <div class="col">
-      <div class="card card-noticia h-100">
-        <img src="assets/noti2.jpeg" class="card-img-top" alt="Noticia 2">
+      <article class="card card-noticia h-100" aria-label="Noticia: Vicuña celebra el día del cuequero">
+        <img src="assets/noti2.jpeg" class="card-img-top" alt="Celebración del día del cuequero en Vicuña">
         <div class="card-body">
-          <h5 class="card-title">Vicuña Celebra el dia del cuequero</h5>
-          <p class="card-text">La comuna de Vicuña celebró por primera vez, con un desayuno de camaraderia.</p>
-          <a href="#" class="btn btn-noticia">Ver más</a>
+          <h5 class="card-title">Vicuña Celebra el día del cuequero</h5>
+          <p class="card-text">La comuna de Vicuña celebró por primera vez, con un desayuno de camaradería.</p>
+          <a href="#" class="btn btn-noticia" aria-label="Leer más sobre celebración del día del cuequero">Ver más</a>
         </div>
-      </div>
+      </article>
     </div>
 
     <!-- Noticia 3 -->
     <div class="col">
-      <div class="card card-noticia h-100">
-        <img src="assets/noti3.jpg" class="card-img-top" alt="Noticia 3">
+      <article class="card card-noticia h-100" aria-label="Noticia: Festival de Jazz en el Teatro Municipal">
+        <img src="assets/noti3.jpg" class="card-img-top" alt="Festival de Jazz en el Teatro Municipal de Vicuña">
         <div class="card-body">
           <h5 class="card-title">Festival de Jazz en el Teatro Municipal</h5>
           <p class="card-text">Expositores de todo el valle presentaron sus shows en el Teatro de la comuna.</p>
-          <a href="#" class="btn btn-noticia">Ver más</a>
+          <a href="#" class="btn btn-noticia" aria-label="Leer más sobre el Festival de Jazz">Ver más</a>
         </div>
-      </div>
+      </article>
     </div>
 
     <!-- Noticia 4 -->
     <div class="col">
-      <div class="card card-noticia h-100">
-        <img src="assets/noti4.jpg" class="card-img-top" alt="Noticia 4">
+      <article class="card card-noticia h-100" aria-label="Noticia: Campaña de reciclaje 2025">
+        <img src="assets/noti4.jpg" class="card-img-top" alt="Campaña de reciclaje en escuelas y barrios">
         <div class="card-body">
           <h5 class="card-title">Campaña de reciclaje 2025</h5>
           <p class="card-text">La municipalidad lanza una campaña para fomentar el reciclaje en escuelas y barrios.</p>
-          <a href="#" class="btn btn-noticia">Ver más</a>
+          <a href="#" class="btn btn-noticia" aria-label="Leer más sobre la campaña de reciclaje 2025">Ver más</a>
         </div>
-      </div>
+      </article>
     </div>
 
   </div>
 </div>
 
-<div class="todas-las-noticias text-center my-4">
-  <a href="#" class="link-todas-las-noticias"><strong>IR A TODAS LAS NOTICIAS</strong>
+<div class="todas-las-noticias text-center my-4" aria-label="Enlace a todas las noticias">
+  <a href="#" class="link-todas-las-noticias" aria-label="Ir a la página con todas las noticias">
+    <strong>IR A TODAS LAS NOTICIAS</strong>
     <i class="bi bi-arrow-right"></i>
   </a>
 </div>

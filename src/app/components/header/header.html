@@ -1,34 +1,34 @@
 <!-- Barra de contacto superior -->
-<div class="top-bar d-flex justify-content-between align-items-center px-3">
+<div class="top-bar d-flex justify-content-between align-items-center px-3" aria-label="Barra de información superior">
   <div class="top-bar d-flex justify-content-between align-items-center px-3">
-  <div>
-    <a href="#" class="top-link me-4">
-      <i class=""></i> Transparencia Activa LEY DE TRANSPARENCIA
-    </a>
-    <a href="#" class="top-link me-4">
-      <i class=""></i> Solicitar Información LEY DE TRANSPARENCIA
-    </a>
-    <a href="#" class="top-link">
-      <i class=""></i> Plataforma LEY DEL LOBY
-    </a>
-  </div>
+    <div>
+      <a href="#" class="top-link me-4" aria-label="Ir a Transparencia Activa según la Ley de Transparencia">
+        <i class=""></i> Transparencia Activa LEY DE TRANSPARENCIA
+      </a>
+      <a href="#" class="top-link me-4" aria-label="Solicitar Información según la Ley de Transparencia">
+        <i class=""></i> Solicitar Información LEY DE TRANSPARENCIA
+      </a>
+      <a href="#" class="top-link" aria-label="Ir a la Plataforma de la Ley del Lobby">
+        <i class=""></i> Plataforma LEY DEL LOBY
+      </a>
+    </div>
 
-</div>
-  <div class="d-none d-md-block">
+  </div>
+  <div class="d-none d-md-block" aria-label="Enlaces a redes sociales">
     <!-- iconos redes sociales -->
-    <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
-    <a href="#" class="text-dark me-2"><i class="bi bi-instagram"></i></a>
-    <a href="#" class="text-dark"><i class="bi bi-twitter-x"></i></a>
+    <a href="#" class="text-dark me-2" aria-label="Visitar nuestra página de Facebook"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="text-dark me-2" aria-label="Visitar nuestra página de Instagram"><i class="bi bi-instagram"></i></a>
+    <a href="#" class="text-dark" aria-label="Visitar nuestra página de Twitter X"><i class="bi bi-twitter-x"></i></a>
   </div>
 </div>
 
 <!-- Barra de navegación principal -->
-<nav class="navbar navbar-expand-lg navbar-dark px-3">
+<nav class="navbar navbar-expand-lg navbar-dark px-3" aria-label="Navegación principal del sitio">
   <div class="container-fluid">
-  <a class="navbar-brand" href="#">
-  <img src="assets/logo.png" alt="LogoVicuña" height="80" routerLink="/">
-</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+    <a class="navbar-brand" href="#" aria-label="Ir a la página de inicio">
+      <img src="assets/logo.png" alt="Logo de la Municipalidad de Vicuña" height="80" routerLink="/">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alternar navegación principal">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -37,58 +37,56 @@
 
         <!-- Dropdown - Municipalidad -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Municipalidad</a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Menú desplegable Municipalidad">Municipalidad</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Alcalde</a></li>
-            <li><a class="dropdown-item" href="#">Concejo Municipal</a></li>
-            <li><a class="dropdown-item" href="#">Organigrama</a></li>
-            <li><a class="dropdown-item" href="#">COSOC</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ver información sobre el Alcalde">Alcalde</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ver información sobre el Concejo Municipal">Concejo Municipal</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ver Organigrama municipal">Organigrama</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ver información sobre COSOC">COSOC</a></li>
           </ul>
         </li>
 
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Oficinas Municipales</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Menú desplegable Oficinas Municipales">Oficinas Municipales</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Dideco</a></li>
-            <li><a class="dropdown-item" routerLink="/secplan">SecPlan</a></li>
-            <li><a class="dropdown-item" href="#">Dom</a></li>
-            <li><a class="dropdown-item" href="#">Secretaria Municipal</a></li>
-            <li><a class="dropdown-item" href="#">Depto. De Transito</a></li>
-            <li><a class="dropdown-item" href="#">Depto. Fomento Productivo</a></li>
-            <li><a class="dropdown-item" href="#">Seguridad</a></li>
-            <li><a class="dropdown-item" href="#">Depto. Jurídico</a></li>
-            <li><a class="dropdown-item" href="#">Control</a></li>
-            <li><a class="dropdown-item" href="#">Depto. Comunicaciones</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a la sección de Dideco">Dideco</a></li>
+            <li><a class="dropdown-item" routerLink="/secplan" aria-label="Ir a la sección de SecPlan">SecPlan</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a la sección de Dom">Dom</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a la sección de Secretaría Municipal">Secretaria Municipal</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a la sección de Departamento de Tránsito">Depto. De Transito</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a la sección de Departamento de Fomento Productivo">Depto. Fomento Productivo</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a la sección de Seguridad">Seguridad</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a la sección de Departamento Jurídico">Depto. Jurídico</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a la sección de Control">Control</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a la sección de Departamento de Comunicaciones">Depto. Comunicaciones</a></li>
           </ul>
         </li>
 
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Servicios Online</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Menú desplegable Servicios Online">Servicios Online</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Pagos Permiso de Circulación</a></li>
-            <li><a class="dropdown-item" href="#">Reserva Hora Licencia De Conducir</a></li>
-            <li><a class="dropdown-item" href="#">Patentes Comerciales</a></li>
-            <li><a class="dropdown-item" href="#">Dom Digital</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a Pagos de Permiso de Circulación">Pagos Permiso de Circulación</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Reservar Hora para Licencia de Conducir">Reserva Hora Licencia De Conducir</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ver información sobre Patentes Comerciales">Patentes Comerciales</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Acceder a Dom Digital">Dom Digital</a></li>
           </ul>
         </li>
 
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Educación y Salud</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Menú desplegable Educación y Salud">Educación y Salud</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Educación</a></li>
-            <li><a class="dropdown-item" href="#">Salud</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a la sección de Educación">Educación</a></li>
+            <li><a class="dropdown-item" href="#" aria-label="Ir a la sección de Salud">Salud</a></li>
           </ul>
         </li>
 
         <!-- Otros menús principales -->
 
-        <li class="nav-item"><a class="nav-link" href="#">Documentos Públicos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" aria-label="Ver Documentos Públicos">Documentos Públicos</a></li>
       </ul>
 
       <div class="d-flex align-items-center">
-
         <a href="#" class="nav-link position-relative">
-
         </a>
 
       </div>
